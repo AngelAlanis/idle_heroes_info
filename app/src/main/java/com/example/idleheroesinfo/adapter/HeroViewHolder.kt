@@ -7,12 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.idleheroesinfo.R
 import com.example.idleheroesinfo.model.Hero
 
-class HeroViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-    val heroPicture: ImageView = view.findViewById(R.id.hero_picture)
-    val heroName: TextView = view.findViewById(R.id.hero_name)
-    val heroShortName: TextView = view.findViewById(R.id.hero_short_name)
-    val heroFaction: TextView = view.findViewById(R.id.hero_faction)
-    val heroClass: TextView = view.findViewById(R.id.hero_class)
+class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    private val heroPicture: ImageView = view.findViewById(R.id.hero_picture)
+    private val heroName: TextView = view.findViewById(R.id.hero_name)
+    private val heroShortName: TextView = view.findViewById(R.id.hero_short_name)
+    private val heroFaction: TextView = view.findViewById(R.id.hero_faction)
+    private val heroClass: TextView = view.findViewById(R.id.hero_class)
 
     fun render(heroModel: Hero) {
         val resources = view.context?.resources
@@ -23,10 +23,7 @@ class HeroViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
             view.context.packageName
         )
 
-
-        if (imageResourceId != null) {
-            heroPicture.setImageResource(imageResourceId)
-        }
+        heroPicture.setImageResource(imageResourceId)
 
         heroName.text = heroModel.name
         heroShortName.text = resources?.getString(R.string.short_name, heroModel.shortName)

@@ -17,6 +17,7 @@
             android:id="@+id/hero_picture"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:importantForAccessibility="no"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -24,11 +25,13 @@
 
         <TextView
             android:id="@+id/hero_name"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:maxLines="2"
             android:padding="4dp"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/hero_picture"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Sword Flash - Xia" />
