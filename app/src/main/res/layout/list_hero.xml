@@ -47,6 +47,16 @@
             app:layout_constraintTop_toBottomOf="@id/hero_name"
             tools:text="Short name: SFX" />
 
+        <ImageView
+            android:id="@+id/faction_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:importantForAccessibility="no"
+            android:padding="2dp"
+            app:layout_constraintStart_toEndOf="@id/hero_faction"
+            app:layout_constraintTop_toBottomOf="@id/hero_short_name"
+            tools:srcCompat="@drawable/faction_transcendence" />
+
         <TextView
             android:id="@+id/hero_faction"
             android:layout_width="wrap_content"
@@ -57,6 +67,16 @@
             app:layout_constraintStart_toEndOf="@id/hero_picture"
             app:layout_constraintTop_toBottomOf="@id/hero_short_name"
             tools:text="Faction: Transcendence" />
+
+        <ImageView
+            android:id="@+id/class_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:importantForAccessibility="no"
+            android:padding="2dp"
+            app:layout_constraintStart_toEndOf="@id/hero_class"
+            app:layout_constraintTop_toBottomOf="@id/hero_faction"
+            tools:srcCompat="@drawable/class_assassin" />
 
         <TextView
             android:id="@+id/hero_class"

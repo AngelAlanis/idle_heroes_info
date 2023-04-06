@@ -14,6 +14,9 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
     private val heroFaction: TextView = view.findViewById(R.id.hero_faction)
     private val heroClass: TextView = view.findViewById(R.id.hero_class)
 
+    private val factionIcon: ImageView = view.findViewById(R.id.faction_icon)
+    private val classIcon: ImageView = view.findViewById(R.id.class_icon)
+
     fun render(heroModel: Hero) {
         val resources = view.context?.resources
 
@@ -22,12 +25,23 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
             "drawable",
             view.context.packageName
         )
-
         heroPicture.setImageResource(imageResourceId)
+
+        classIcon.setImageResource(getHeroClassIconId(heroModel.heroClass))
+        factionIcon.setImageResource(R.drawable.faction_transcendence)
 
         heroName.text = heroModel.name
         heroShortName.text = resources?.getString(R.string.short_name, heroModel.shortName)
         heroFaction.text = resources?.getString(R.string.faction, heroModel.faction)
         heroClass.text = resources?.getString(R.string.hero_class, heroModel.heroClass)
+    }
+
+    fun getHeroClassIconId(heroClass: String): Int {
+        return when (heroClass) {
+            "Warrior" -> R.drawable.class_warrior
+            "Mage" -> R.drawable.class_mage
+            "Ranger" -> R.drawable.class_ranger
+            else -> R.drawable.class_assassin
+        }
     }
 }
