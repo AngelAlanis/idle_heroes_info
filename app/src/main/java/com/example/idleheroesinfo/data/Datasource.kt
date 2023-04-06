@@ -5,7 +5,7 @@ import com.example.idleheroesinfo.model.Hero
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-class Datasource(private val context: Context) {
+class Datasource(val context: Context) {
     fun loadHeroes(): List<Hero> {
         val heroes: MutableList<Hero> = mutableListOf()
 

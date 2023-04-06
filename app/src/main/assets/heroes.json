@@ -96,14 +96,14 @@
       "shortName": "PDE",
       "faction": "Transcendence",
       "heroClass": "Priest",
-      "image": "PDE.png"
+      "image": "pde.png"
     },
     {
       "name": "Hyperspace Hunter - Aylamak",
       "shortName": "HHA",
       "faction": "Transcendence",
       "heroClass": "Warrior",
-      "image": "HHA.png"
+      "image": "hha.png"
     }
   ]
 }
