@@ -17,6 +17,17 @@ class HeroViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
     fun render(heroModel: Hero) {
         val resources = view.context?.resources
 
+        val imageResourceId = view.context.resources.getIdentifier(
+            heroModel.image,
+            "drawable",
+            view.context.packageName
+        )
+
+
+        if (imageResourceId != null) {
+            heroPicture.setImageResource(imageResourceId)
+        }
+
         heroName.text = heroModel.name
         heroShortName.text = resources?.getString(R.string.short_name, heroModel.shortName)
         heroFaction.text = resources?.getString(R.string.faction, heroModel.faction)

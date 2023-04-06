@@ -4,104 +4,104 @@
     "shortName": "SFX",
     "faction": "Transcendence",
     "heroClass": "Assassin",
-    "image": "sfx.png"
+    "image": "sfx"
   },
   {
     "name": "Scarlet Queen - Halora",
     "shortName": "SQH",
     "faction": "Transcendence",
     "heroClass": "Ranger",
-    "image": "sqh.png"
+    "image": "sqh"
   },
   {
     "name": "Asmodel the Dauntless",
     "shortName": "ATD",
     "faction": "Transcendence",
     "heroClass": "Warrior",
-    "image": "atd.png"
+    "image": "atd"
   },
   {
     "name": "Star Wing - Jahra",
     "shortName": "SWJ",
     "faction": "Transcendence",
     "heroClass": "Mage",
-    "image": "swj.png"
+    "image": "swj"
   },
   {
     "name": "Fairy Queen - Vesa",
     "shortName": "FQV",
     "faction": "Transcendence",
     "heroClass": "Priest",
-    "image": "fqv.png"
+    "image": "fqv"
   },
   {
     "name": "Lord of Fear - Aspen",
     "shortName": "LoFA",
     "faction": "Transcendence",
     "heroClass": "Warrior",
-    "image": "lofa.png"
+    "image": "lofa"
   },
   {
     "name": "The Sun Devourer - Eos",
     "shortName": "SDE",
     "faction": "Transcendence",
     "heroClass": "Mage",
-    "image": "sde.png"
+    "image": "sde"
   },
   {
     "name": "Star Alchemist - Holmes Young",
     "shortName": "SAHY",
     "faction": "Transcendence",
     "heroClass": "Mage",
-    "image": "sahy.png"
+    "image": "sahy"
   },
   {
     "name": "Mystic Fairy - Freya",
     "shortName": "MFF",
     "faction": "Transcendence",
     "heroClass": "Ranger",
-    "image": "mff.png"
+    "image": "mff"
   },
   {
     "name": "Star Swordsman - Mockman",
     "shortName": "SSM",
     "faction": "Transcendence",
     "heroClass": "Warrior",
-    "image": "ssm.png"
+    "image": "ssm"
   },
   {
     "name": "Lord of Death - Azrael",
     "shortName": "LDA",
     "faction": "Transcendence",
     "heroClass": "Assassin",
-    "image": "lda.png"
+    "image": "lda"
   },
   {
     "name": "Bloodtide Queen - Aranea",
     "shortName": "BQA",
     "faction": "Transcendence",
     "heroClass": "Priest",
-    "image": "bqa.png"
+    "image": "bqa"
   },
   {
     "name": "Doom Terminator - Vulcan",
     "shortName": "DTV",
     "faction": "Transcendence",
     "heroClass": "Warrior",
-    "image": "dtv.png"
+    "image": "dtv"
   },
   {
     "name": "Phantom Defier - Elena",
     "shortName": "PDE",
     "faction": "Transcendence",
     "heroClass": "Priest",
-    "image": "pde.png"
+    "image": "pde"
   },
   {
     "name": "Hyperspace Hunter - Aylamak",
     "shortName": "HHA",
     "faction": "Transcendence",
     "heroClass": "Warrior",
-    "image": "hha.png"
+    "image": "hha"
   }
 ]
