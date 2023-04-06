@@ -36,7 +36,7 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         heroClass.text = resources?.getString(R.string.hero_class, heroModel.heroClass)
     }
 
-    fun getHeroClassIconId(heroClass: String): Int {
+    private fun getHeroClassIconId(heroClass: String): Int {
         return when (heroClass) {
             "Warrior" -> R.drawable.class_warrior
             "Mage" -> R.drawable.class_mage
