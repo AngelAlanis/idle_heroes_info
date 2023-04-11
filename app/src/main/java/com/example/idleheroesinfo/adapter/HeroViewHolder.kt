@@ -41,6 +41,7 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
             "Warrior" -> R.drawable.class_warrior
             "Mage" -> R.drawable.class_mage
             "Ranger" -> R.drawable.class_ranger
+            "Priest" -> R.drawable.class_priest
             else -> R.drawable.class_assassin
         }
     }

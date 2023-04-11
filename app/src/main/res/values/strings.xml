@@ -3,4 +3,6 @@
     <string name="short_name">Short Name: %1$s</string>
     <string name="faction">Faction: %1$s</string>
     <string name="hero_class">Class: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
