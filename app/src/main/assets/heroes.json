@@ -4,6 +4,10 @@
     "shortName": "SFX",
     "faction": "Transcendence",
     "heroClass": "Assassin",
+    "baseHP": "797720",
+    "baseAttack": "62458",
+    "baseDefense": "1554",
+    "baseSpeed": "1286",
     "image": "sfx"
   },
   {
@@ -11,6 +15,10 @@
     "shortName": "SQH",
     "faction": "Transcendence",
     "heroClass": "Ranger",
+    "baseHP": "854700",
+    "baseAttack": "51282",
+    "baseDefense": "1554",
+    "baseSpeed": "1292",
     "image": "sqh"
   },
   {
@@ -18,6 +26,10 @@
     "shortName": "ATD",
     "faction": "Transcendence",
     "heroClass": "Warrior",
+    "baseHP": "911680",
+    "baseAttack": "45584",
+    "baseDefense": "1554",
+    "baseSpeed": "1280",
     "image": "atd"
   },
   {
