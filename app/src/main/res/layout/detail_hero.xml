@@ -12,6 +12,7 @@
         android:layout_width="@dimen/icon_size"
         android:layout_height="@dimen/icon_size"
         android:layout_margin="8dp"
+        android:contentDescription="@string/hero_power"
         android:src="@drawable/ic_power"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -142,7 +143,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poetsen_one_regular"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        app:drawableStartCompat="@drawable/class_icon"
+        app:drawableStartCompat="@drawable/default_icons"
         app:layout_constraintEnd_toEndOf="@id/stats_background"
         app:layout_constraintStart_toStartOf="@id/stats_background"
         app:layout_constraintTop_toTopOf="@id/stats_background"
@@ -150,43 +151,88 @@
 
     <View
         android:id="@+id/frame_hp"
-        android:layout_width="@dimen/stats_square_size"
-        android:layout_height="@dimen/stats_square_size"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/border_stats"
+        style="@style/stat_squares"
+        app:layout_constraintBottom_toBottomOf="@id/stats_background"
         app:layout_constraintEnd_toStartOf="@id/frame_attack"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="@id/stats_background"
-        app:layout_constraintTop_toBottomOf="@+id/hero_class" />
+        app:layout_constraintTop_toBottomOf="@id/hero_class" />
 
     <View
         android:id="@+id/frame_attack"
-        android:layout_width="@dimen/stats_square_size"
-        android:layout_height="@dimen/stats_square_size"
-        android:background="@drawable/border_stats"
-        app:layout_constraintBottom_toBottomOf="@+id/frame_hp"
+        style="@style/stat_squares"
+        app:layout_constraintBottom_toBottomOf="@id/stats_background"
         app:layout_constraintEnd_toStartOf="@id/frame_defense"
         app:layout_constraintStart_toEndOf="@id/frame_hp"
-        app:layout_constraintTop_toTopOf="@+id/frame_hp" />
+        app:layout_constraintTop_toBottomOf="@id/hero_class" />
 
     <View
         android:id="@+id/frame_defense"
-        android:layout_width="@dimen/stats_square_size"
-        android:layout_height="@dimen/stats_square_size"
-        android:background="@drawable/border_stats"
-        app:layout_constraintBottom_toBottomOf="@+id/frame_hp"
+        style="@style/stat_squares"
+        app:layout_constraintBottom_toBottomOf="@id/stats_background"
         app:layout_constraintEnd_toStartOf="@id/frame_speed"
         app:layout_constraintStart_toEndOf="@id/frame_attack"
-        app:layout_constraintTop_toTopOf="@+id/frame_hp" />
+        app:layout_constraintTop_toBottomOf="@id/hero_class" />
 
     <View
         android:id="@+id/frame_speed"
-        android:layout_width="@dimen/stats_square_size"
-        android:layout_height="@dimen/stats_square_size"
-        android:background="@drawable/border_stats"
-        app:layout_constraintBottom_toBottomOf="@id/frame_hp"
-        app:layout_constraintEnd_toEndOf="@+id/stats_background"
+        style="@style/stat_squares"
+        app:layout_constraintBottom_toBottomOf="@id/stats_background"
+        app:layout_constraintEnd_toEndOf="@id/stats_background"
         app:layout_constraintStart_toEndOf="@id/frame_defense"
-        app:layout_constraintTop_toTopOf="@id/frame_hp" />
+        app:layout_constraintTop_toBottomOf="@id/hero_class" />
+
+    <TextView
+        android:id="@+id/hero_base_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/default_icons"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintBottom_toBottomOf="@id/frame_hp"
+        app:layout_constraintEnd_toEndOf="@id/frame_hp"
+        app:layout_constraintStart_toStartOf="@id/frame_hp"
+        app:layout_constraintTop_toTopOf="@id/frame_hp"
+        tools:text="797720" />
+
+    <TextView
+        android:id="@+id/hero_base_attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/default_icons"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintBottom_toBottomOf="@id/frame_attack"
+        app:layout_constraintEnd_toEndOf="@id/frame_attack"
+        app:layout_constraintStart_toStartOf="@id/frame_attack"
+        app:layout_constraintTop_toTopOf="@id/frame_attack"
+        tools:text="62458" />
+
+    <TextView
+        android:id="@+id/hero_base_defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/default_icons"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintBottom_toBottomOf="@id/frame_defense"
+        app:layout_constraintEnd_toEndOf="@id/frame_defense"
+        app:layout_constraintStart_toStartOf="@id/frame_defense"
+        app:layout_constraintTop_toTopOf="@id/frame_defense"
+        tools:text="1554" />
+
+    <TextView
+        android:id="@+id/hero_base_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/default_icons"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintBottom_toBottomOf="@id/frame_speed"
+        app:layout_constraintEnd_toEndOf="@id/frame_speed"
+        app:layout_constraintStart_toStartOf="@id/frame_speed"
+        app:layout_constraintTop_toTopOf="@id/frame_speed"
+        tools:text="1286" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
