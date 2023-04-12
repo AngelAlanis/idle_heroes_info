@@ -37,6 +37,10 @@
     "shortName": "SWJ",
     "faction": "Transcendence",
     "heroClass": "Mage",
+    "baseHP": "740740",
+    "baseAttack": "48433",
+    "baseDefense": "1554",
+    "baseSpeed": "1289",
     "image": "swj"
   },
   {
@@ -44,6 +48,10 @@
     "shortName": "FQV",
     "faction": "Transcendence",
     "heroClass": "Priest",
+    "baseHP": "683760",
+    "baseAttack": "45584",
+    "baseDefense": "1554",
+    "baseSpeed": "1280",
     "image": "fqv"
   },
   {
@@ -51,6 +59,10 @@
     "shortName": "LoFA",
     "faction": "Transcendence",
     "heroClass": "Warrior",
+    "baseHP": "797720",
+    "baseAttack": "51282",
+    "baseDefense": "1554",
+    "baseSpeed": "1280",
     "image": "lofa"
   },
   {
@@ -58,6 +70,10 @@
     "shortName": "SDE",
     "faction": "Transcendence",
     "heroClass": "Mage",
+    "baseHP": "712250",
+    "baseAttack": "56980",
+    "baseDefense": "1554",
+    "baseSpeed": "1289",
     "image": "sde"
   },
   {
@@ -65,6 +81,10 @@
     "shortName": "SAHY",
     "faction": "Transcendence",
     "heroClass": "Mage",
+    "baseHP": "740740",
+    "baseAttack": "54131",
+    "baseDefense": "1554",
+    "baseSpeed": "1289",
     "image": "sahy"
   },
   {
@@ -72,6 +92,10 @@
     "shortName": "MFF",
     "faction": "Transcendence",
     "heroClass": "Ranger",
+    "baseHP": "883190",
+    "baseAttack": "48433",
+    "baseDefense": "1554",
+    "baseSpeed": "1292",
     "image": "mff"
   },
   {
@@ -79,6 +103,10 @@
     "shortName": "SSM",
     "faction": "Transcendence",
     "heroClass": "Warrior",
+    "baseHP": "854700",
+    "baseAttack": "48433",
+    "baseDefense": "1554",
+    "baseSpeed": "1283",
     "image": "ssm"
   },
   {
@@ -86,6 +114,10 @@
     "shortName": "LDA",
     "faction": "Transcendence",
     "heroClass": "Assassin",
+    "baseHP": "797720",
+    "baseAttack": "56980",
+    "baseDefense": "1554",
+    "baseSpeed": "1288",
     "image": "lda"
   },
   {
@@ -93,6 +125,10 @@
     "shortName": "BQA",
     "faction": "Transcendence",
     "heroClass": "Priest",
+    "baseHP": "740740",
+    "baseAttack": "45584",
+    "baseDefense": "1554",
+    "baseSpeed": "1280",
     "image": "bqa"
   },
   {
@@ -100,6 +136,10 @@
     "shortName": "DTV",
     "faction": "Transcendence",
     "heroClass": "Warrior",
+    "baseHP": "968660",
+    "baseAttack": "54131",
+    "baseDefense": "1554",
+    "baseSpeed": "1280",
     "image": "dtv"
   },
   {
@@ -107,6 +147,10 @@
     "shortName": "PDE",
     "faction": "Transcendence",
     "heroClass": "Priest",
+    "baseHP": "826210",
+    "baseAttack": "51282",
+    "baseDefense": "1554",
+    "baseSpeed": "1281",
     "image": "pde"
   },
   {
@@ -114,6 +158,10 @@
     "shortName": "HHA",
     "faction": "Transcendence",
     "heroClass": "Warrior",
+    "baseHP": "968660",
+    "baseAttack": "54131",
+    "baseDefense": "1554",
+    "baseSpeed": "1280",
     "image": "hha"
   }
 ]
