@@ -125,7 +125,7 @@
     <View
         android:id="@+id/stats_background"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="160dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -135,33 +135,58 @@
         app:layout_constraintTop_toBottomOf="@id/tier_layout" />
 
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/hero_class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:drawableStartCompat="@drawable/class_icon"
         app:layout_constraintEnd_toEndOf="@id/stats_background"
         app:layout_constraintStart_toStartOf="@id/stats_background"
-        app:layout_constraintTop_toTopOf="@id/stats_background">
+        app:layout_constraintTop_toTopOf="@id/stats_background"
+        tools:text="Assassin" />
 
-        <ImageView
-            android:id="@+id/class_icon"
-            android:importantForAccessibility="no"
-            android:layout_width="@dimen/icon_size"
-            android:layout_height="@dimen/icon_size"
-            android:layout_marginEnd="4dp"
-            tools:src="@drawable/class_assassin" />
+    <View
+        android:id="@+id/frame_hp"
+        android:layout_width="@dimen/stats_square_size"
+        android:layout_height="@dimen/stats_square_size"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_stats"
+        app:layout_constraintEnd_toStartOf="@id/frame_attack"
+        app:layout_constraintStart_toStartOf="@id/stats_background"
+        app:layout_constraintTop_toBottomOf="@+id/hero_class" />
 
-        <TextView
-            android:id="@+id/hero_class"
-            android:layout_width="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poetsen_one_regular"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            tools:text="Assassin" />
-    </LinearLayout>
+    <View
+        android:id="@+id/frame_attack"
+        android:layout_width="@dimen/stats_square_size"
+        android:layout_height="@dimen/stats_square_size"
+        android:background="@drawable/border_stats"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_hp"
+        app:layout_constraintEnd_toStartOf="@id/frame_defense"
+        app:layout_constraintStart_toEndOf="@id/frame_hp"
+        app:layout_constraintTop_toTopOf="@+id/frame_hp" />
+
+    <View
+        android:id="@+id/frame_defense"
+        android:layout_width="@dimen/stats_square_size"
+        android:layout_height="@dimen/stats_square_size"
+        android:background="@drawable/border_stats"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_hp"
+        app:layout_constraintEnd_toStartOf="@id/frame_speed"
+        app:layout_constraintStart_toEndOf="@id/frame_attack"
+        app:layout_constraintTop_toTopOf="@+id/frame_hp" />
+
+    <View
+        android:id="@+id/frame_speed"
+        android:layout_width="@dimen/stats_square_size"
+        android:layout_height="@dimen/stats_square_size"
+        android:background="@drawable/border_stats"
+        app:layout_constraintBottom_toBottomOf="@id/frame_hp"
+        app:layout_constraintEnd_toEndOf="@+id/stats_background"
+        app:layout_constraintStart_toEndOf="@id/frame_defense"
+        app:layout_constraintTop_toTopOf="@id/frame_hp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
