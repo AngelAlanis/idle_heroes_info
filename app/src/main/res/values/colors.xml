@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="card_background">#BD916E</color>
     <color name="app_background">#E1CAAA</color>
+    <color name="detail_background">#E1CAAA</color>
+    <color name="detail_stats_background">#F8F2E2</color>
+    <color name="detail_stats_background_individual">#F0E4CE</color>
+    <color name="details_background_border">#C8AF91</color>
 </resources>
