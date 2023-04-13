@@ -9,6 +9,7 @@ data class Hero(
     val shortName: String,
     val faction: String,
     val heroClass: String,
+    val basePower: Int,
     val baseHP: Int,
     val baseAttack: Int,
     val baseDefense: Int,
@@ -24,6 +25,7 @@ data class Hero(
         parcel.readInt(),
         parcel.readInt(),
         parcel.readInt(),
+        parcel.readInt(),
         parcel.readString()!!
     )
 
@@ -32,6 +34,7 @@ data class Hero(
         parcel.writeString(shortName)
         parcel.writeString(faction)
         parcel.writeString(heroClass)
+        parcel.writeInt(basePower)
         parcel.writeInt(baseHP)
         parcel.writeInt(baseAttack)
         parcel.writeInt(baseDefense)
