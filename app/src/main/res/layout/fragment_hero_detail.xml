@@ -20,11 +20,10 @@
 
     <TextView
         android:id="@+id/hero_power"
+        style="@style/headline6_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         app:layout_constraintBottom_toBottomOf="@id/power_icon"
         app:layout_constraintStart_toEndOf="@id/power_icon"
         app:layout_constraintTop_toTopOf="@id/power_icon"
@@ -32,21 +31,21 @@
 
     <TextView
         android:id="@+id/hero_level"
+        style="@style/headline6_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="@string/lv_250_250"
         app:layout_constraintBottom_toBottomOf="@id/hero_power"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/hero_power"
-        android:text="@string/lv_250_250" />
+        app:layout_constraintTop_toTopOf="@id/hero_power" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        app:dividerColor="@color/card_background"
         app:dividerInsetEnd="16dp"
         app:dividerInsetStart="8dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,15 +53,14 @@
 
     <TextView
         android:id="@+id/tier"
+        style="@style/headline6_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="@string/tier"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider"
-        android:text="@string/tier" />
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
     <LinearLayout
         android:id="@+id/tier_layout"
@@ -139,11 +137,10 @@
 
     <TextView
         android:id="@+id/hero_class"
+        style="@style/headline6_light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         app:drawableStartCompat="@drawable/default_icons"
         app:layout_constraintEnd_toEndOf="@id/stats_background"
         app:layout_constraintStart_toStartOf="@id/stats_background"
@@ -185,11 +182,10 @@
 
     <TextView
         android:id="@+id/hero_base_hp"
+        style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/default_icons"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         app:layout_constraintBottom_toBottomOf="@id/frame_hp"
         app:layout_constraintEnd_toEndOf="@id/frame_hp"
         app:layout_constraintStart_toStartOf="@id/frame_hp"
@@ -198,11 +194,10 @@
 
     <TextView
         android:id="@+id/hero_base_attack"
+        style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/default_icons"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         app:layout_constraintBottom_toBottomOf="@id/frame_attack"
         app:layout_constraintEnd_toEndOf="@id/frame_attack"
         app:layout_constraintStart_toStartOf="@id/frame_attack"
@@ -211,11 +206,10 @@
 
     <TextView
         android:id="@+id/hero_base_defense"
+        style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/default_icons"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         app:layout_constraintBottom_toBottomOf="@id/frame_defense"
         app:layout_constraintEnd_toEndOf="@id/frame_defense"
         app:layout_constraintStart_toStartOf="@id/frame_defense"
@@ -224,11 +218,10 @@
 
     <TextView
         android:id="@+id/hero_base_speed"
+        style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/default_icons"
-        android:fontFamily="@font/poetsen_one_regular"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         app:layout_constraintBottom_toBottomOf="@id/frame_speed"
         app:layout_constraintEnd_toEndOf="@id/frame_speed"
         app:layout_constraintStart_toStartOf="@id/frame_speed"

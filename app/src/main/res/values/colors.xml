@@ -13,4 +13,7 @@
     <color name="detail_stats_background">#F8F2E2</color>
     <color name="detail_stats_background_individual">#F0E4CE</color>
     <color name="details_background_border">#C8AF91</color>
+    <color name="text_dark">#522A11</color>
+    <color name="text_medium">#8B5B2B</color>
+    <color name="text_light">#90624A</color>
 </resources>

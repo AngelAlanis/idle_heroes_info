@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="stat_squares">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:background">@drawable/border_stats</item>
         <item name="android:layout_margin">8dp</item>
         <item name="layout_constraintDimensionRatio">1:1</item>
+    </style>
+
+    <style name="headline6_dark" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poetsen_one_regular</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="headline6_medium" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poetsen_one_regular</item>
+        <item name="android:textColor">@color/text_medium</item>
+    </style>
+
+    <style name="headline6_light" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poetsen_one_regular</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="subtitle1_medium" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poetsen_one_regular</item>
+        <item name="android:textColor">@color/text_medium</item>
     </style>
 </resources>
