@@ -40,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="@id/hero_power"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/hero_power"
-        tools:text="LV: 250/250" />
+        android:text="@string/lv_250_250" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider"
@@ -62,7 +62,7 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider"
-        tools:text="Tier" />
+        android:text="@string/tier" />
 
     <LinearLayout
         android:id="@+id/tier_layout"

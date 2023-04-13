@@ -18,5 +18,9 @@
         android:id="@+id/heroDetailFragment"
         android:name="com.example.idleheroesinfo.HeroDetailFragment"
         android:label="fragment_hero_detail"
-        tools:layout="@layout/fragment_hero_detail" />
+        tools:layout="@layout/fragment_hero_detail" >
+        <argument
+            android:name="hero"
+            app:argType="com.example.idleheroesinfo.model.Hero" />
+    </fragment>
 </navigation>

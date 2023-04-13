@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_hp"
+        android:width = "30dp"
+        android:height = "30dp"
+        android:end = "4dp"
+        />
+
+    <item
+        android:drawable="@drawable/ic_attack"
+        android:width = "30dp"
+        android:height = "30dp"
+        android:end = "4dp"
+        />
+
+    <item
+        android:drawable="@drawable/ic_defense"
+        android:width = "30dp"
+        android:height = "30dp"
+        android:end = "4dp"
+        />
+
+    <item
+        android:drawable="@drawable/ic_speed"
+        android:width = "30dp"
+        android:height = "30dp"
+        android:end = "4dp"
+        />
+
+</selector>

@@ -20,5 +20,7 @@ class HeroCardAdapter(private val heroList: List<Hero>) : RecyclerView.Adapter<H
     override fun onBindViewHolder(holder: HeroViewHolder, position: Int) {
         val hero = heroList[position]
         holder.render(hero)
+
     }
+
 }
