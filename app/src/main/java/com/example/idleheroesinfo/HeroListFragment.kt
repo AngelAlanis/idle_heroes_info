@@ -23,7 +23,7 @@ class HeroListFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHeroListBinding.inflate(inflater, container, false)
         return binding.root
     }

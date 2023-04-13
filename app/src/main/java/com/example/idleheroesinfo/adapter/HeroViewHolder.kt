@@ -2,9 +2,6 @@ package com.example.idleheroesinfo.adapter
 
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.idleheroesinfo.HeroListFragmentDirections
