@@ -8,6 +8,28 @@
     android:padding="8dp"
     tools:context=".HeroDetailFragment">
 
+    <TextView
+        android:id="@+id/hero_name"
+        style="@style/headline6_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sword Flash - Xia" />
+
+    <TextView
+        android:id="@+id/hero_short_name"
+        style="@style/headline6_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_name"
+        tools:text="SFX" />
+
     <ImageView
         android:id="@+id/power_icon"
         android:layout_width="@dimen/icon_size"
@@ -16,7 +38,7 @@
         android:contentDescription="@string/hero_power"
         android:src="@drawable/ic_power"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/hero_short_name" />
 
     <TextView
         android:id="@+id/hero_power"

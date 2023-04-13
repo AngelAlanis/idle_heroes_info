@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.idleheroesinfo.databinding.FragmentHeroDetailBinding
 import com.example.idleheroesinfo.model.Hero
+import java.text.NumberFormat
 
 class HeroDetailFragment : Fragment() {
     companion object {
@@ -39,13 +40,22 @@ class HeroDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         // Set the Views values from the Hero
-        binding.heroPower.text = hero.basePower.toString()
+        binding.heroName.text = hero.name
+        binding.heroShortName.text = hero.shortName
+
+        binding.heroPower.text = formatNumber(hero.basePower)
+
         binding.iconClass.setImageResource(hero.getHeroClassIconId())
         binding.heroClass.text = hero.heroClass
-        binding.heroBaseHp.text = hero.baseHP.toString()
-        binding.heroBaseAttack.text = hero.baseAttack.toString()
-        binding.heroBaseDefense.text = hero.baseDefense.toString()
-        binding.heroBaseSpeed.text = hero.baseSpeed.toString()
+
+        binding.heroBaseHp.text = formatNumber(hero.baseHP)
+        binding.heroBaseAttack.text = formatNumber(hero.baseAttack)
+        binding.heroBaseDefense.text = formatNumber(hero.baseDefense)
+        binding.heroBaseSpeed.text = formatNumber(hero.baseSpeed)
+    }
+
+    private fun formatNumber(number: Int): String {
+        return NumberFormat.getNumberInstance().format(number).toString()
     }
 
     override fun onDestroyView() {
