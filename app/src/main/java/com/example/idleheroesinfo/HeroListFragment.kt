@@ -40,6 +40,7 @@ class HeroListFragment : Fragment() {
 
     private fun initRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(context)
+        // Load the RecyclerView adapter with the Hero List in the Datasource class
         recyclerView.adapter = HeroCardAdapter(Datasource(requireContext()).loadHeroes())
     }
 

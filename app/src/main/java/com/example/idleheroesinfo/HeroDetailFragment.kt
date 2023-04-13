@@ -21,6 +21,7 @@ class HeroDetailFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Get the Hero attribute from the previous fragment.
         arguments?.let {
             hero = it.getParcelable(HERO)!!
         }
@@ -37,6 +38,7 @@ class HeroDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+        // Set the Views values from the Hero
         binding.heroPower.text = "3242423"
         binding.iconClass.setImageResource(hero.getHeroClassIconId())
         binding.heroClass.text = hero.heroClass

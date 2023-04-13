@@ -25,8 +25,7 @@ data class Hero(
         parcel.readInt(),
         parcel.readInt(),
         parcel.readString()!!
-    ) {
-    }
+    )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
@@ -44,7 +43,7 @@ data class Hero(
         return 0
     }
 
-    public fun getHeroClassIconId(): Int {
+    fun getHeroClassIconId(): Int {
         return when (heroClass) {
             "Warrior" -> R.drawable.class_warrior
             "Mage" -> R.drawable.class_mage
@@ -53,7 +52,6 @@ data class Hero(
             else -> R.drawable.class_assassin
         }
     }
-
 
     companion object CREATOR : Parcelable.Creator<Hero> {
         override fun createFromParcel(parcel: Parcel): Hero {
