@@ -2,6 +2,7 @@ package com.example.idleheroesinfo.model
 
 import android.os.Parcel
 import android.os.Parcelable
+import com.example.idleheroesinfo.R
 
 data class Hero(
     val name: String,
@@ -42,6 +43,17 @@ data class Hero(
     override fun describeContents(): Int {
         return 0
     }
+
+    public fun getHeroClassIconId(): Int {
+        return when (heroClass) {
+            "Warrior" -> R.drawable.class_warrior
+            "Mage" -> R.drawable.class_mage
+            "Ranger" -> R.drawable.class_ranger
+            "Priest" -> R.drawable.class_priest
+            else -> R.drawable.class_assassin
+        }
+    }
+
 
     companion object CREATOR : Parcelable.Creator<Hero> {
         override fun createFromParcel(parcel: Parcel): Hero {

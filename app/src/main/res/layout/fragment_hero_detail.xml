@@ -134,17 +134,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tier_layout" />
 
+    <ImageView
+        android:id="@+id/icon_class"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/hero_class"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/stats_background"
+        app:layout_constraintTop_toTopOf="@+id/stats_background"
+        app:srcCompat="@drawable/class_assassin" />
 
     <TextView
         android:id="@+id/hero_class"
         style="@style/headline6_light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:drawableStartCompat="@drawable/default_icons"
-        app:layout_constraintEnd_toEndOf="@id/stats_background"
-        app:layout_constraintStart_toStartOf="@id/stats_background"
-        app:layout_constraintTop_toTopOf="@id/stats_background"
+        app:layout_constraintBottom_toBottomOf="@id/icon_class"
+        app:layout_constraintEnd_toEndOf="@+id/stats_background"
+        app:layout_constraintStart_toEndOf="@id/icon_class"
+        app:layout_constraintTop_toTopOf="@+id/icon_class"
         tools:text="Assassin" />
 
     <View
@@ -180,52 +190,92 @@
         app:layout_constraintStart_toEndOf="@id/frame_defense"
         app:layout_constraintTop_toBottomOf="@id/hero_class" />
 
+    <ImageView
+        android:id="@+id/icon_hp"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_hp"
+        app:layout_constraintBottom_toTopOf="@+id/hero_base_hp"
+        app:layout_constraintEnd_toEndOf="@+id/hero_base_hp"
+        app:layout_constraintStart_toStartOf="@+id/hero_base_hp"
+        app:layout_constraintTop_toTopOf="@id/frame_hp"
+        app:layout_constraintVertical_chainStyle="packed" />
+
     <TextView
         android:id="@+id/hero_base_hp"
         style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/default_icons"
         app:layout_constraintBottom_toBottomOf="@id/frame_hp"
         app:layout_constraintEnd_toEndOf="@id/frame_hp"
         app:layout_constraintStart_toStartOf="@id/frame_hp"
-        app:layout_constraintTop_toTopOf="@id/frame_hp"
+        app:layout_constraintTop_toBottomOf="@id/icon_hp"
         tools:text="797720" />
+
+    <ImageView
+        android:id="@+id/icon_attack"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_attack"
+        app:layout_constraintBottom_toTopOf="@+id/hero_base_attack"
+        app:layout_constraintEnd_toEndOf="@+id/hero_base_attack"
+        app:layout_constraintStart_toStartOf="@+id/hero_base_attack"
+        app:layout_constraintTop_toTopOf="@id/frame_attack"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/hero_base_attack"
         style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/default_icons"
         app:layout_constraintBottom_toBottomOf="@id/frame_attack"
         app:layout_constraintEnd_toEndOf="@id/frame_attack"
         app:layout_constraintStart_toStartOf="@id/frame_attack"
-        app:layout_constraintTop_toTopOf="@id/frame_attack"
+        app:layout_constraintTop_toBottomOf="@id/icon_attack"
         tools:text="62458" />
+
+    <ImageView
+        android:id="@+id/icon_defense"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_defense"
+        app:layout_constraintBottom_toTopOf="@+id/hero_base_defense"
+        app:layout_constraintEnd_toEndOf="@+id/hero_base_defense"
+        app:layout_constraintStart_toStartOf="@+id/hero_base_defense"
+        app:layout_constraintTop_toTopOf="@id/frame_defense"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/hero_base_defense"
         style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/default_icons"
         app:layout_constraintBottom_toBottomOf="@id/frame_defense"
         app:layout_constraintEnd_toEndOf="@id/frame_defense"
         app:layout_constraintStart_toStartOf="@id/frame_defense"
-        app:layout_constraintTop_toTopOf="@id/frame_defense"
+        app:layout_constraintTop_toBottomOf="@id/icon_defense"
         tools:text="1554" />
+
+    <ImageView
+        android:id="@+id/icon_speed"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_speed"
+        app:layout_constraintBottom_toTopOf="@+id/hero_base_speed"
+        app:layout_constraintEnd_toEndOf="@+id/hero_base_speed"
+        app:layout_constraintStart_toStartOf="@+id/hero_base_speed"
+        app:layout_constraintTop_toTopOf="@id/frame_speed"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/hero_base_speed"
         style="@style/subtitle1_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/default_icons"
         app:layout_constraintBottom_toBottomOf="@id/frame_speed"
         app:layout_constraintEnd_toEndOf="@id/frame_speed"
         app:layout_constraintStart_toStartOf="@id/frame_speed"
-        app:layout_constraintTop_toTopOf="@id/frame_speed"
+        app:layout_constraintTop_toBottomOf="@id/icon_speed"
         tools:text="1286" />
 
 

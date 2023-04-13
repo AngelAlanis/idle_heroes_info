@@ -31,7 +31,7 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         )
         heroPicture.setImageResource(imageResourceId)
 
-        classIcon.setImageResource(getHeroClassIconId(heroModel.heroClass))
+        classIcon.setImageResource(heroModel.getHeroClassIconId())
         factionIcon.setImageResource(R.drawable.faction_transcendence)
 
         heroName.text = heroModel.name
@@ -50,13 +50,4 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         }
     }
 
-    private fun getHeroClassIconId(heroClass: String): Int {
-        return when (heroClass) {
-            "Warrior" -> R.drawable.class_warrior
-            "Mage" -> R.drawable.class_mage
-            "Ranger" -> R.drawable.class_ranger
-            "Priest" -> R.drawable.class_priest
-            else -> R.drawable.class_assassin
-        }
-    }
 }

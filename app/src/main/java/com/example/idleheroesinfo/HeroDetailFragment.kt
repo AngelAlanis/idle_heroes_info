@@ -38,6 +38,7 @@ class HeroDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         binding.heroPower.text = "3242423"
+        binding.iconClass.setImageResource(hero.getHeroClassIconId())
         binding.heroClass.text = hero.heroClass
         binding.heroBaseHp.text = hero.baseHP.toString()
         binding.heroBaseAttack.text = hero.baseAttack.toString()
@@ -50,4 +51,6 @@ class HeroDetailFragment : Fragment() {
         _binding = null
 
     }
+
+
 }
