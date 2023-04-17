@@ -1,6 +1,7 @@
 package com.example.idleheroesinfo.data
 
 import android.content.Context
+import com.example.idleheroesinfo.model.BiographyItem
 import com.example.idleheroesinfo.model.Hero
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -8,17 +9,28 @@ import com.google.gson.reflect.TypeToken
 class Datasource(private val context: Context) {
     fun loadHeroes(): List<Hero> {
         val heroes: MutableList<Hero> = mutableListOf()
+        val gson = Gson()
 
         // Read JSON File
-        val jsonFileString =
+        val heroJsonFile =
             context.assets.open("heroes.json").bufferedReader().use { it.readText() }
 
         // Convert JSON to a list of Hero using GSON
-        val gson = Gson()
         val listHeroType = object : TypeToken<List<Hero>>() {}.type
-        val heroList: List<Hero> = gson.fromJson(jsonFileString, listHeroType)
+        val heroList: List<Hero> = gson.fromJson(heroJsonFile, listHeroType)
 
-        heroes.addAll(heroList)
+        val biographyJsonFile =
+            context.assets.open("bios.json").bufferedReader().use { it.readText() }
+        val listBiographyType = object : TypeToken<List<BiographyItem>>() {}.type
+        val biographyList: List<BiographyItem> = gson.fromJson(biographyJsonFile, listBiographyType)
+
+        for (hero in heroList) {
+            val biography = biographyList.find { it.heroName == hero.name }
+            if (biography != null) {
+                hero.biography = biography.description
+            }
+            heroes.add(hero)
+        }
 
         return heroes
     }

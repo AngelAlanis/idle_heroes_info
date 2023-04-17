@@ -14,6 +14,7 @@ data class Hero(
     val baseAttack: Int,
     val baseDefense: Int,
     val baseSpeed: Int,
+    var biography: String?,
     val image: String,
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
@@ -26,6 +27,7 @@ data class Hero(
         parcel.readInt(),
         parcel.readInt(),
         parcel.readInt(),
+        parcel.readString()!!,
         parcel.readString()!!
     )
 
@@ -39,6 +41,7 @@ data class Hero(
         parcel.writeInt(baseAttack)
         parcel.writeInt(baseDefense)
         parcel.writeInt(baseSpeed)
+        parcel.writeString(biography)
         parcel.writeString(image)
     }
 
