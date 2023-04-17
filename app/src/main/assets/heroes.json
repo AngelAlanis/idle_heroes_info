@@ -9,6 +9,7 @@
     "baseAttack": "62458",
     "baseDefense": "1554",
     "baseSpeed": "1286",
+    "bioID": "01",
     "image": "sfx"
   },
   {
@@ -21,6 +22,7 @@
     "baseAttack": "51282",
     "baseDefense": "1554",
     "baseSpeed": "1292",
+    "bioID": "02",
     "image": "sqh"
   },
   {
@@ -33,6 +35,7 @@
     "baseAttack": "45584",
     "baseDefense": "1554",
     "baseSpeed": "1280",
+    "bioID": "03",
     "image": "atd"
   },
   {
@@ -45,6 +48,7 @@
     "baseAttack": "48433",
     "baseDefense": "1554",
     "baseSpeed": "1289",
+    "bioID": "04",
     "image": "swj"
   },
   {
@@ -57,6 +61,7 @@
     "baseAttack": "45584",
     "baseDefense": "1554",
     "baseSpeed": "1280",
+    "bioID": "05",
     "image": "fqv"
   },
   {
@@ -69,6 +74,7 @@
     "baseAttack": "51282",
     "baseDefense": "1554",
     "baseSpeed": "1280",
+    "bioID": "06",
     "image": "lofa"
   },
   {
@@ -81,6 +87,7 @@
     "baseAttack": "56980",
     "baseDefense": "1554",
     "baseSpeed": "1289",
+    "bioID": "07",
     "image": "sde"
   },
   {
@@ -93,6 +100,7 @@
     "baseAttack": "54131",
     "baseDefense": "1554",
     "baseSpeed": "1289",
+    "bioID": "08",
     "image": "sahy"
   },
   {
@@ -105,6 +113,7 @@
     "baseAttack": "48433",
     "baseDefense": "1554",
     "baseSpeed": "1292",
+    "bioID": "09",
     "image": "mff"
   },
   {
@@ -117,6 +126,7 @@
     "baseAttack": "48433",
     "baseDefense": "1554",
     "baseSpeed": "1283",
+    "bioID": "10",
     "image": "ssm"
   },
   {
@@ -129,6 +139,7 @@
     "baseAttack": "56980",
     "baseDefense": "1554",
     "baseSpeed": "1288",
+    "bioID": "11",
     "image": "lda"
   },
   {
@@ -141,6 +152,7 @@
     "baseAttack": "45584",
     "baseDefense": "1554",
     "baseSpeed": "1280",
+    "bioID": "12",
     "image": "bqa"
   },
   {
@@ -153,6 +165,7 @@
     "baseAttack": "54131",
     "baseDefense": "1554",
     "baseSpeed": "1280",
+    "bioID": "13",
     "image": "dtv"
   },
   {
@@ -165,6 +178,7 @@
     "baseAttack": "51282",
     "baseDefense": "1554",
     "baseSpeed": "1281",
+    "bioID": "14",
     "image": "pde"
   },
   {
@@ -177,6 +191,7 @@
     "baseAttack": "54131",
     "baseDefense": "1554",
     "baseSpeed": "1280",
+    "bioID": "15",
     "image": "hha"
   }
 ]
