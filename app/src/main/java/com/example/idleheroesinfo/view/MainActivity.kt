@@ -1,10 +1,11 @@
-package com.example.idleheroesinfo
+package com.example.idleheroesinfo.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.example.idleheroesinfo.R
 import com.example.idleheroesinfo.databinding.ActivityMainBinding
 
 

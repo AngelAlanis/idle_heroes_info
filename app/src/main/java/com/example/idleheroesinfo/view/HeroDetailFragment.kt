@@ -1,17 +1,18 @@
-package com.example.idleheroesinfo
+package com.example.idleheroesinfo.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.idleheroesinfo.data.Datasource
 import com.example.idleheroesinfo.databinding.FragmentHeroDetailBinding
 import com.example.idleheroesinfo.model.Hero
 import java.text.NumberFormat
 
 class HeroDetailFragment : Fragment() {
     companion object {
-        const val HERO = "hero"
+        const val HERO_POSITION = "heroPosition"
     }
 
     private var _binding: FragmentHeroDetailBinding? = null
@@ -20,12 +21,16 @@ class HeroDetailFragment : Fragment() {
 
     private lateinit var hero: Hero
 
+    private var heroPosition: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Get the Hero attribute from the previous fragment.
         arguments?.let {
-            hero = it.getParcelable(HERO)!!
+            heroPosition = it.getInt(HERO_POSITION)
         }
+
+        hero = Datasource(requireContext()).loadHeroes()[heroPosition]
     }
 
     override fun onCreateView(

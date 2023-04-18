@@ -1,14 +1,12 @@
 package com.example.idleheroesinfo.adapter
 
-import android.os.Bundle
 import android.view.View
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.idleheroesinfo.HeroListFragment
-import com.example.idleheroesinfo.HeroListFragmentDirections
 import com.example.idleheroesinfo.R
 import com.example.idleheroesinfo.databinding.ListHeroBinding
 import com.example.idleheroesinfo.model.Hero
+import com.example.idleheroesinfo.view.HeroListFragmentDirections
 
 class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
@@ -37,17 +35,18 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         binding.heroClass.text = resources?.getString(R.string.hero_class, heroModel.heroClass)
 
         itemView.setOnClickListener {
-            // Create a bundle and put the Hero
-            val bundle = Bundle()
-            bundle.putParcelable("hero", heroModel)
+            val position = adapterPosition
 
-            // Send the Hero parcelable bundle to the HeroDetailFragment and go to that fragment
-            val action =
-                HeroListFragmentDirections.actionHeroListFragmentToHeroDetailFragment(hero = heroModel)
+            if (position != RecyclerView.NO_POSITION) {
+                val action = HeroListFragmentDirections
+                    .actionHeroListFragmentToHeroDetailFragment(
+                        heroPosition = position
+                    )
 
-            if (view.findNavController().currentDestination?.id == R.id.heroListFragment) {
-                view.findNavController().navigate(action)
+                if (view.findNavController().currentDestination?.id == R.id.heroListFragment) {
+                    view.findNavController().navigate(action)
 
+                }
             }
         }
     }

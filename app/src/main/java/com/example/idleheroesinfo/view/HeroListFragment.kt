@@ -1,4 +1,4 @@
-package com.example.idleheroesinfo
+package com.example.idleheroesinfo.view
 
 import android.os.Bundle
 import android.view.LayoutInflater

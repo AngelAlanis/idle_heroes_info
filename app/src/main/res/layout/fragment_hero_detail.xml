@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/detail_background"
     android:padding="8dp"
-    tools:context=".HeroDetailFragment">
+    tools:context=".view.HeroDetailFragment">
 
     <TextView
         android:id="@+id/hero_name"

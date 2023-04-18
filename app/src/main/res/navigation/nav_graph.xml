@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/heroListFragment"
-        android:name="com.example.idleheroesinfo.HeroListFragment"
+        android:name="com.example.idleheroesinfo.view.HeroListFragment"
         android:label="fragment_hero_list"
         tools:layout="@layout/fragment_hero_list" >
         <action
@@ -16,11 +16,11 @@
     </fragment>
     <fragment
         android:id="@+id/heroDetailFragment"
-        android:name="com.example.idleheroesinfo.HeroDetailFragment"
+        android:name="com.example.idleheroesinfo.view.HeroDetailFragment"
         android:label="fragment_hero_detail"
         tools:layout="@layout/fragment_hero_detail" >
         <argument
-            android:name="hero"
-            app:argType="com.example.idleheroesinfo.model.Hero" />
+            android:name="heroPosition"
+            app:argType="integer" />
     </fragment>
 </navigation>
