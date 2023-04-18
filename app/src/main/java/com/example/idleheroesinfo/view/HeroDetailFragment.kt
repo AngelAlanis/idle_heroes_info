@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.idleheroesinfo.data.Datasource
+import com.example.idleheroesinfo.model.Datasource
 import com.example.idleheroesinfo.databinding.FragmentHeroDetailBinding
 import com.example.idleheroesinfo.model.Hero
 import java.text.NumberFormat

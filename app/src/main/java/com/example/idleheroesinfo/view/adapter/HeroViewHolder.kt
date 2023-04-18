@@ -1,4 +1,4 @@
-package com.example.idleheroesinfo.adapter
+package com.example.idleheroesinfo.view.adapter
 
 import android.view.View
 import androidx.navigation.findNavController

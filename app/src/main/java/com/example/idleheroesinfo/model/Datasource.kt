@@ -1,8 +1,6 @@
-package com.example.idleheroesinfo.data
+package com.example.idleheroesinfo.model
 
 import android.content.Context
-import com.example.idleheroesinfo.model.BiographyItem
-import com.example.idleheroesinfo.model.Hero
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 

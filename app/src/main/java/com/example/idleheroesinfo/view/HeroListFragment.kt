@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.idleheroesinfo.adapter.HeroCardAdapter
-import com.example.idleheroesinfo.data.Datasource
+import com.example.idleheroesinfo.view.adapter.HeroCardAdapter
+import com.example.idleheroesinfo.model.Datasource
 import com.example.idleheroesinfo.databinding.FragmentHeroListBinding
 
 class HeroListFragment : Fragment() {
