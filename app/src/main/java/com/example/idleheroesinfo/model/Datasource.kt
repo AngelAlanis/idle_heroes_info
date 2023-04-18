@@ -25,11 +25,10 @@ class Datasource(private val context: Context) {
         for (hero in heroList) {
             val biography = biographyList.find { it.heroName == hero.name }
             if (biography != null) {
-                hero.biography = biography.description
+                hero.biography = biography
             }
             heroes.add(hero)
         }
-
         return heroes
     }
 }

@@ -58,7 +58,8 @@ class HeroDetailFragment : Fragment() {
         binding.heroBaseDefense.text = formatNumber(hero.baseDefense)
         binding.heroBaseSpeed.text = formatNumber(hero.baseSpeed)
 
-        binding.heroBiography.text = hero.biography
+        binding.biographyLabel.text = hero.biography.title
+        binding.heroBiography.text = hero.biography.description
     }
 
     private fun formatNumber(number: Int): String {
