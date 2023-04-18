@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.idleheroesinfo.HeroListFragment
 import com.example.idleheroesinfo.HeroListFragmentDirections
 import com.example.idleheroesinfo.R
 import com.example.idleheroesinfo.databinding.ListHeroBinding
@@ -43,7 +44,11 @@ class HeroViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
             // Send the Hero parcelable bundle to the HeroDetailFragment and go to that fragment
             val action =
                 HeroListFragmentDirections.actionHeroListFragmentToHeroDetailFragment(hero = heroModel)
-            view.findNavController().navigate(action)
+
+            if (view.findNavController().currentDestination?.id == R.id.heroListFragment) {
+                view.findNavController().navigate(action)
+
+            }
         }
     }
 
