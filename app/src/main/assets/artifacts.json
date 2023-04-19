@@ -1,26 +1,193 @@
 [
   {
     "name": "Demon Bell",
-    "description": "Fdjhdfskjfds",
+    "description": "Energy Outburst: When the hero releases active skill, have a 100% chance to increase all allies 20 energy and a 50% chance to increase an extra 10 energy.",
     "image": "demon_bell",
-    "stats": "dsfjdsf\ndsfsdf\ndsfsdfs"
+    "stats": {
+      "stat1": "+18.0% Attack",
+      "stat2": "+14.0% HP",
+      "stat3": "+50 Energy"
+    }
   },
   {
-    "name": "dsfds Bell",
-    "description": "Fdjhdfskjfds",
-    "image": "demon_bell",
-    "stats": "dsfjdsf\ndsfsdf\ndsfsdfs"
+    "name": "Antlers Cane",
+    "description": "Blessing of the Wild: When a round ends, increase all damage dealt by the hero by 9%.Blessing of the Wild: When a round ends, increase all damage dealt by the hero by 9%.",
+    "image": "antlers_cane",
+    "stats": {
+      "stat1": "+70.0% Precision",
+      "stat2": "+25.0% Attack",
+      "stat3": "+60.0% Skill Damage"
+    }
   },
   {
-    "name": "dfdfsdsfdsf Bell",
-    "description": "Fdjhdfskjfds",
-    "image": "demon_bell",
-    "stats": "dsfjdsf\ndsfsdf\ndsfsdfs"
+    "name": "Staff: Punisher of Immortal",
+    "description": "God's Power: When the hero Crits, deal extra damage by 25% of the target's max HP. (Damage caps at 2500% of the hero's Attack.)",
+    "image": "punisher_of_immortal",
+    "stats": {
+      "stat1": "+21.0% Attack",
+      "stat2": "+15.0% Crit",
+      "stat3": "+50.0% Crit Damage"
+    }
   },
   {
-    "name": "fdgf Bell",
-    "description": "Fdjhdfskjfds",
-    "image": "demon_bell",
-    "stats": "dsfjdsf\ndsfsdf\ndsfsdfs"
+    "name": "Magic Stone Sword",
+    "description": "Soul Guardian: Offsets (not exceeding 100% of the wearer's HP) the damage received, capping the single damage received at 20% of the wearer's max HP. (Not applied to damages from Healing Charm and Monsters.)",
+    "image": "magic_stone_sword",
+    "stats": {
+      "stat1": "+21.0% Attack",
+      "stat2": "+30.0% Damage Reduction",
+      "stat3": "+25.0% Control Immunity"
+    }
+  },
+  {
+    "name": "Augustus Magic Ball",
+    "description": "Enchanted Shield: Reduces the damage received by 250% of the hero's Attack.(Invalid to damage from Healing Charm and Monsters.)",
+    "image": "augustus_magic_ball",
+    "stats": {
+      "stat1": "+25.0% Attack",
+      "stat2": "+70 Speed",
+      "stat3": "+50.0% Block"
+    }
+  },
+  {
+    "name": "The Kiss of Ghost",
+    "description": "Bloody Plunder: When the hero releases active skill or basic attacks, restore self HP by 90% of damage dealt. (Invalid to DOT.)",
+    "image": "the_kiss_of_ghost",
+    "stats": {
+      "stat1": "+25.0% Attack",
+      "stat2": "+100.0% Armor Break",
+      "stat3": "+14.0% HP"
+    }
+  },
+  {
+    "name": "Lucky Candy Bar",
+    "description": "Control of Destiny: When the battle starts, offset the first Control effect received and grant immunity to this Control effect during the battle. When the hero is controlled, get self Hand of Fate for 1 round. When a round ends, if the hero is controlled, get self Hand of Fate for 1 round. (Hand of Fate: increases self 30% of All-damage Reduction. Not stackable.)",
+    "image": "lucky_candy_bar",
+    "stats": {
+      "stat1": "+22.0% Attack",
+      "stat2": "+18.0% HP",
+      "stat3": "Stun Immunity"
+    }
+  },
+  {
+    "name": "Wildfire Torch",
+    "description": "Shielding Flame: Converts 80% of damage from active skills or basic attacks into DoT, each time receiving damage by 20% of the converted damage, lasting for 4 rounds. (The converted DoT won't be affected by any effects.)",
+    "image": "wildfire_torch",
+    "stats": {
+      "stat1": "+60.0% Precision",
+      "stat2": "+18.0% HP",
+      "stat3": "+70.0% Reduces DOT received"
+    }
+  },
+  {
+    "name": "Golden Crown",
+    "description": "Deterrence of Majesty: When the battle starts, increase the hero 50% of All-damage Reduce which will decrease by 10% each round.",
+    "image": "golden_crown",
+    "stats": {
+      "stat1": "+18.0% Attack",
+      "stat2": "+25.0% HP",
+      "stat3": "+25.0% All-damage Reduction"
+    }
+  },
+  {
+    "name": "Ruyi Scepter",
+    "description": "Eye of Insights: Offsets the target 30% of Control Immune.",
+    "image": "ruyi_scepter",
+    "stats": {
+      "stat1": "+25.0% HP",
+      "stat2": "+75 Speed",
+      "stat3": "+50.0% Control Precision"
+    }
+  },
+  {
+    "name": "Snow Heart",
+    "description": "Piercing Frost: At the beginning of the battle and the end of each round, there is a 100%, 66% and 33% chance to inflict Frost respectively on the 3 enemies with the highest Speed for 1 round(s) (Frost: Skill effect. Reduces the target's Speed by 60.)",
+    "image": "snow_heart",
+    "stats": {
+      "stat1": "+25.0% Control Immunity",
+      "stat2": "+18.0% HP",
+      "stat3": "+50 Energy"
+    }
+  },
+  {
+    "name": "Melodic Strings",
+    "description": "Valiant Music: At the beginning of each battle, increases self All Damage Dealt by 50%. It reduces by 10% per round, down to a minimum of 20%.",
+    "image": "melodic_strings",
+    "stats": {
+      "stat1": "+20.0% Attack",
+      "stat2": "+25.0% Holy Damage",
+      "stat3": "+50 Energy"
+    }
+  },
+  {
+    "name": "Shadow Flag",
+    "description": "Devotion: Reduces self Attack by 40% and lowers self Max. HP by 40% during the battle.",
+    "image": "shadow_flag",
+    "stats": {
+      "stat1": "+24.0% Attack",
+      "stat2": "+30.0% HP",
+      "stat3": ""
+    }
+  },
+  {
+    "name": "Fortress Flag",
+    "description": "Devotion: Reduces self Attack by 40% and lowers self Max. HP by 40% during the battle.",
+    "image": "fortress_flag",
+    "stats": {
+      "stat1": "+24.0% Attack",
+      "stat2": "+30.0% HP",
+      "stat3": ""
+    }
+  },
+  {
+    "name": "Abyss Flag",
+    "description": "Devotion: Reduces self Attack by 40% and lowers self Max. HP by 40% during the battle.",
+    "image": "abyss_flag",
+    "stats": {
+      "stat1": "+24.0% Attack",
+      "stat2": "+30.0% HP",
+      "stat3": ""
+    }
+  },
+  {
+    "name": "Forest Flag",
+    "description": "Devotion: Reduces self Attack by 40% and lowers self Max. HP by 40% during the battle.",
+    "image": "forest_flag",
+    "stats": {
+      "stat1": "+24.0% Attack",
+      "stat2": "+30.0% HP",
+      "stat3": ""
+    }
+  },
+  {
+    "name": "Dark Flag",
+    "description": "Devotion: Reduces self Attack by 40% and lowers self Max. HP by 40% during the battle.",
+    "image": "dark_flag",
+    "stats": {
+      "stat1": "+24.0% Attack",
+      "stat2": "+30.0% HP",
+      "stat3": ""
+    }
+  },
+  {
+    "name": "Light Flag",
+    "description": "Devotion: Reduces self Attack by 40% and lowers self Max. HP by 40% during the battle.",
+    "image": "light_flag",
+    "stats": {
+      "stat1": "+24.0% Attack",
+      "stat2": "+30.0% HP",
+      "stat3": ""
+    }
+  },
+  {
+    "name": "Shadow Flag",
+    "description": "Devotion: Reduces self Attack by 40% and lowers self Max. HP by 40% during the battle.",
+    "image": "transcendence_flag",
+    "stats": {
+      "stat1": "+24.0% Attack",
+      "stat2": "+30.0% HP",
+      "stat3": ""
+    }
   }
+
 ]
