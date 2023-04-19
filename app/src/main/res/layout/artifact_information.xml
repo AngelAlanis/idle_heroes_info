@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/artifact_information_background"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp"
+    app:layout_constraintDimensionRatio="1:1">
+
+    <TextView
+        android:id="@+id/artifact_name"
+        style="@style/headline6_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EC15E8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Demon Bell - Splendid" />
+
+    <ImageView
+        android:id="@+id/artifact_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_defense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/artifact_name" />
+
+    <TextView
+        android:id="@+id/artifact_label"
+        style="@style/subtitle1_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/artifact"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/artifact_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/artifact_image"
+        app:layout_constraintTop_toTopOf="@id/artifact_image"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/artifact_stats"
+        style="@style/subtitle1_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/artifact_image"
+        app:layout_constraintVertical_bias="0"
+        tools:text="+18% Attack\n+14% HP\n+50 Energy" />
+
+    <TextView
+        android:id="@+id/artifact_description"
+        style="@style/subtitle1_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFF06B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/artifact_stats"
+        app:layout_constraintVertical_bias="0"
+        tools:text="Energy Outburst: When the hero releases active skill, have a 100% chance to increase all allies 20 energy and a 50% chance to increase an extra 10 energy." />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

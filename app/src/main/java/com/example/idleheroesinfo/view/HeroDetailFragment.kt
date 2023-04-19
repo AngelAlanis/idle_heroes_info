@@ -71,6 +71,4 @@ class HeroDetailFragment : Fragment() {
         _binding = null
 
     }
-
-
 }
