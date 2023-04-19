@@ -9,20 +9,29 @@ class Datasource(private val context: Context) {
         val heroes: MutableList<Hero> = mutableListOf()
         val gson = Gson()
 
-        // Read JSON File
+        // Read heroes.json File
         val heroJsonFile =
-            context.assets.open("heroes.json").bufferedReader().use { it.readText() }
+            context.assets.open(
+                "heroes.json"
+            ).bufferedReader().use { it.readText() }
 
         // Convert JSON to a list of Hero using GSON
         val listHeroType = object : TypeToken<List<Hero>>() {}.type
         val heroList: List<Hero> = gson.fromJson(heroJsonFile, listHeroType)
 
+        // Read bios.json
         val biographyJsonFile =
-            context.assets.open("bios.json").bufferedReader().use { it.readText() }
+            context.assets.open(
+                "bios.json"
+            ).bufferedReader().use { it.readText() }
+
+        // Convert JSON file to a list of biographies
         val listBiographyType = object : TypeToken<List<BiographyItem>>() {}.type
         val biographyList: List<BiographyItem> = gson.fromJson(biographyJsonFile, listBiographyType)
 
+        // Add the BiographyItem to the corresponding hero
         for (hero in heroList) {
+            // Match Hero.name with BiographyItem.heroName
             val biography = biographyList.find { it.heroName == hero.name }
             if (biography != null) {
                 hero.biography = biography
