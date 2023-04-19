@@ -33,7 +33,7 @@ class ArtifactListFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        recyclerView.layoutManager = GridLayoutManager(context, 4)
+        recyclerView.layoutManager = GridLayoutManager(context, 3)
         // Load the RecyclerView adapter with the artifact List in the Datasource class
         recyclerView.adapter = ArtifactListAdapter(
             ArtifactProvider(requireContext()).loadArtifacts()
