@@ -4,9 +4,10 @@ import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-class ArtifactProvider(private val context: Context) {
+class
+ArtifactProvider(private val context: Context) {
 
-    fun loadArtifacts(): List<ArtifactItem> {
+    fun loadArtifacts(): List<Artifact> {
         val gson = Gson()
 
         // Read heroes.json File
@@ -16,7 +17,7 @@ class ArtifactProvider(private val context: Context) {
             ).bufferedReader().use { it.readText() }
 
         // Convert JSON to a list of Hero using GSON
-        val listHeroType = object : TypeToken<List<ArtifactItem>>() {}.type
+        val listHeroType = object : TypeToken<List<Artifact>>() {}.type
 
         return gson.fromJson(artifactJsonFile, listHeroType)
     }

@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.idleheroesinfo.R
-import com.example.idleheroesinfo.model.ArtifactItem
+import com.example.idleheroesinfo.model.Artifact
 
 class ArtifactListAdapter(
-    private val artifactlist: List<ArtifactItem>
+    private val artifactlist: List<Artifact>
 ) : RecyclerView.Adapter<ArtifactListHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArtifactListHolder {
