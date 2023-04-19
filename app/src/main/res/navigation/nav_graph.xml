@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/heroListFragment"
         android:name="com.example.idleheroesinfo.view.HeroListFragment"
-        android:label="fragment_hero_list"
-        tools:layout="@layout/fragment_hero_list" >
+        android:label="@string/heroes"
+        tools:layout="@layout/fragment_hero_list">
         <action
             android:id="@+id/action_heroListFragment_to_heroDetailFragment"
             app:destination="@id/heroDetailFragment" />
@@ -23,4 +23,9 @@
             android:name="heroPosition"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/artifactListFragment"
+        android:name="com.example.idleheroesinfo.view.ArtifactListFragment"
+        android:label="fragment_artifact_list"
+        tools:layout="@layout/fragment_artifact_list" />
 </navigation>

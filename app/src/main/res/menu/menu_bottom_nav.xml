@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_heroes"
+        android:icon="@drawable/ic_defense"
+        android:title="@string/heroes" />
+    <item
+        android:id="@+id/menu_artifacts"
+        android:icon="@drawable/ic_power"
+        android:title="@string/artifacts" />
+</menu>
