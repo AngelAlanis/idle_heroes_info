@@ -4,7 +4,8 @@ data class Artifact(
     val name: String,
     val description: String,
     val image: String,
-    val stats: Stats
+    val stats: Stats,
+    var imageResourceId: Int = 0
 )
 
 data class Stats(

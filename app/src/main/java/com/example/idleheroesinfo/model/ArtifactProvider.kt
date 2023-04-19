@@ -17,8 +17,17 @@ ArtifactProvider(private val context: Context) {
             ).bufferedReader().use { it.readText() }
 
         // Convert JSON to a list of Hero using GSON
-        val listHeroType = object : TypeToken<List<Artifact>>() {}.type
+        val listArtifactType = object : TypeToken<List<Artifact>>() {}.type
+        val artifacts = gson.fromJson<List<Artifact>>(artifactJsonFile, listArtifactType)
 
-        return gson.fromJson(artifactJsonFile, listHeroType)
+        for (artifact in artifacts) {
+            artifact.imageResourceId = context.resources.getIdentifier(
+                artifact.image,
+                "drawable",
+                context.packageName
+            )
+        }
+
+        return artifacts
     }
 }
