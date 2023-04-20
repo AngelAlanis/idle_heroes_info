@@ -27,5 +27,9 @@
         android:id="@+id/artifactListFragment"
         android:name="com.example.idleheroesinfo.view.ArtifactListFragment"
         android:label="fragment_artifact_list"
-        tools:layout="@layout/fragment_artifact_list" />
+        tools:layout="@layout/fragment_artifact_list" >
+        <action
+            android:id="@+id/action_artifactListFragment_to_heroListFragment"
+            app:destination="@id/heroListFragment" />
+    </fragment>
 </navigation>

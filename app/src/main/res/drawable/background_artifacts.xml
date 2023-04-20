@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="35dp"
+                android:color="@color/artifact_inner_border" />
+            <corners android:radius="32dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="15dp"
+                android:color="@color/artifact_outer_border" />
+            <corners android:radius="32dp" />
+        </shape>
+    </item>
+</layer-list>
