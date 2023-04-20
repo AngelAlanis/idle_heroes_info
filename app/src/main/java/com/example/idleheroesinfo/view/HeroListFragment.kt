@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.idleheroesinfo.view.adapter.HeroCardAdapter
-import com.example.idleheroesinfo.model.Datasource
+import com.example.idleheroesinfo.model.HeroProvider
 import com.example.idleheroesinfo.databinding.FragmentHeroListBinding
 
 class HeroListFragment : Fragment() {
@@ -41,7 +41,7 @@ class HeroListFragment : Fragment() {
     private fun initRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         // Load the RecyclerView adapter with the Hero List in the Datasource class
-        recyclerView.adapter = HeroCardAdapter(Datasource(requireContext()).loadHeroes())
+        recyclerView.adapter = HeroCardAdapter(HeroProvider(requireContext()).loadHeroes())
     }
 
 }

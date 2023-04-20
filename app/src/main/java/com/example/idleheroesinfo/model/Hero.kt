@@ -12,7 +12,7 @@ data class Hero(
     val baseAttack: Int,
     val baseDefense: Int,
     val baseSpeed: Int,
-    var biography: BiographyItem,
+    var biography: Biography,
     val image: String,
 ) {
     fun getHeroClassIconId(): Int {
@@ -25,3 +25,10 @@ data class Hero(
         }
     }
 }
+
+data class Biography(
+    val id: String,
+    val heroName: String,
+    val title: String,
+    val description: String
+)

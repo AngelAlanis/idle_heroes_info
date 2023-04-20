@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.idleheroesinfo.model.Datasource
+import com.example.idleheroesinfo.model.HeroProvider
 import com.example.idleheroesinfo.databinding.FragmentHeroDetailBinding
 import com.example.idleheroesinfo.model.Hero
 import java.text.NumberFormat
@@ -30,7 +30,7 @@ class HeroDetailFragment : Fragment() {
             heroPosition = it.getInt(HERO_POSITION)
         }
 
-        hero = Datasource(requireContext()).loadHeroes()[heroPosition]
+        hero = HeroProvider(requireContext()).loadHeroes()[heroPosition]
     }
 
     override fun onCreateView(

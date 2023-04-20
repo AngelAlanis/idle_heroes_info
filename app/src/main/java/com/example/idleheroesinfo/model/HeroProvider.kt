@@ -4,7 +4,7 @@ import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-class Datasource(private val context: Context) {
+class HeroProvider(private val context: Context) {
     fun loadHeroes(): List<Hero> {
         val heroes: MutableList<Hero> = mutableListOf()
         val gson = Gson()
@@ -26,8 +26,8 @@ class Datasource(private val context: Context) {
             ).bufferedReader().use { it.readText() }
 
         // Convert JSON file to a list of biographies
-        val listBiographyType = object : TypeToken<List<BiographyItem>>() {}.type
-        val biographyList: List<BiographyItem> = gson.fromJson(biographyJsonFile, listBiographyType)
+        val listBiographyType = object : TypeToken<List<Biography>>() {}.type
+        val biographyList: List<Biography> = gson.fromJson(biographyJsonFile, listBiographyType)
 
         // Add the BiographyItem to the corresponding hero
         for (hero in heroList) {
