@@ -3,10 +3,10 @@
 
     <item
         android:id="@+id/menu_heroes"
-        android:icon="@drawable/ic_defense"
+        android:icon="@drawable/ic_hero"
         android:title="@string/heroes" />
     <item
         android:id="@+id/menu_artifacts"
-        android:icon="@drawable/ic_power"
+        android:icon="@drawable/ic_artifact"
         android:title="@string/artifacts" />
 </menu>
