@@ -12,4 +12,5 @@
     <string name="artifact">Artifact</string>
     <string name="heroes">Heroes</string>
     <string name="artifacts">Artifacts</string>
+    <string name="splendid_artifact">Splendid - %1$s</string>
 </resources>

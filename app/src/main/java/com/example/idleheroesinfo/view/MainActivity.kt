@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.idleheroesinfo.R
@@ -26,8 +25,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.menuBottom.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.menu_heroes -> changeFragment(HeroListFragment())
-                R.id.menu_artifacts -> changeFragment(ArtifactListFragment())
+                R.id.menu_heroes -> {
+                    navController.currentDestination?.id = R.id.heroListFragment
+                    changeFragment(HeroListFragment())
+                }
+                R.id.menu_artifacts -> {
+                    navController.currentDestination?.id = R.id.artifactListFragment
+                    changeFragment(ArtifactListFragment())
+                }
             }
             true
         }
