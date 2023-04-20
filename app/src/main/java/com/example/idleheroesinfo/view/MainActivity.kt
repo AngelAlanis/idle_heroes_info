@@ -23,27 +23,19 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
+        navController.navigate(R.id.heroListFragment)
+
         binding.menuBottom.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.menu_heroes -> {
-                    navController.currentDestination?.id = R.id.heroListFragment
-                    changeFragment(HeroListFragment())
+                    navController.navigate(R.id.heroListFragment)
                 }
                 R.id.menu_artifacts -> {
-                    navController.currentDestination?.id = R.id.artifactListFragment
-                    changeFragment(ArtifactListFragment())
+                    navController.navigate(R.id.artifactListFragment)
                 }
             }
             true
         }
-    }
-
-    private fun changeFragment(fragment: Fragment) {
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction
-            .replace(R.id.nav_host_fragment, fragment)
-            .commit()
     }
 
     override fun onSupportNavigateUp(): Boolean {
